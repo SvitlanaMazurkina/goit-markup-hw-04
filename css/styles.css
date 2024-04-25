@@ -249,6 +249,9 @@ img {
   background-color: #f4f4fd;
   margin-bottom: 8px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .features-icon {
 }
@@ -303,15 +306,18 @@ img {
   justify-content: center;
 }
 .team-icons-soc {
+  width: 40px;
+  height: 40px;
+}
+.team-icons-soc-list {
+  width: 100%;
+  height: 100%;
   background-color: #4d5ae5;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-}
-.team-icons-soc-list {
+  background-position: center;
 }
 
 /*------------------------------------------------*/
@@ -391,10 +397,14 @@ img {
   padding-bottom: 100px;
 }
 .footer-container {
-  flex-direction: column;
+  display: flex;
+  align-items: baseline;
 }
 .footer-logo {
-  color: var(--CLOUD, #f4f4fd);
+  margin-right: 120px;
+}
+.footer-logo {
+  color: #f4f4fd;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -404,7 +414,7 @@ img {
   background: var(--NAVY-BLUE, #2e2f42);
 }
 .footer-logo-blue {
-  color: var(--IRIS, #4d5ae5);
+  color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -417,12 +427,49 @@ img {
   display: inline-block;
 }
 .footer-heading {
-  color: var(--CLOUD, #f4f4fd);
+  color: #f4f4fd;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  background: var(--NAVY-BLUE, #2e2f42);
-  display: flex;
-
+  background: #2e2f42;
+  padding-left: 0;
   width: 264px;
+  text-transform: none;
+}
+.par {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.footer-icons:hover,
+.icon-link-footer:focus {
+  background-color: #31d0aa;
+}
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+.footer-icons-list {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+}
+.footer-icons-soc {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-icon-footer {
+  fill: #f4f4fd;
 }
